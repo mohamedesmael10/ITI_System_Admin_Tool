@@ -1,5 +1,6 @@
 import subprocess
 import os
+
 try:
     from colorama import Fore, Style, init
     init(autoreset=True)  
@@ -8,10 +9,13 @@ except ImportError:
         def __getattr__(self, name):
             return ""
     Fore = Style = DummyColor()
+
+GITHUB_LINK = "https://github.com/mohamedesmael10/ITI_System_Admin_Tool/tree/main"
+
 def display_welcome():
     """Displays the welcome banner and project details."""
     print(Fore.GREEN + r"""
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ⠀⢠⣤⣄⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    ⠀   ⠀⢠⣤⣄⠀
 	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣧
 	⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣶⣶⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣷⠀⠀⠀⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⡿
 	⠀⠀⠀⠀⠀⢀⣤⣾⣿⡿⠛⢫⣿⡷⠀⠀⠀⢀⣄⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⠀⠀⣸⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⠁
@@ -29,10 +33,12 @@ def display_welcome():
 	⠀⠀⠘⠻⡧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 """)
 
-    print(Fore.CYAN + "╔════════════════════════════════════════════════════════╗")
-    print(Fore.CYAN + "║ Welcome to My Python Project                           ║")
-    print(Fore.CYAN + "║ Implemented by: Mohamed Esmael                         ║")
-    print(Fore.CYAN + "╚════════════════════════════════════════════════════════╝" + Style.RESET_ALL)
+    print(Fore.CYAN + "╔══════════════════════════════════════════════════════════════════════════════╗")
+    print(Fore.CYAN + "║ Welcome to My Python Project                                                 ║")
+    print(Fore.CYAN + "║ Implemented by: Mohamed Esmael                                               ║")
+    print(Fore.CYAN + "╠══════════════════════════════════════════════════════════════════════════════╣")
+    print(Fore.CYAN + f"║ GitHub: {GITHUB_LINK:<48}   ║")
+    print(Fore.CYAN + "╚══════════════════════════════════════════════════════════════════════════════╝" + Style.RESET_ALL)
 
 def launch_gui():
     """Launch the GUI application."""
