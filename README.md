@@ -55,11 +55,14 @@ Ensure the following are installed in your environment:
 1. Clone the repository:
    ```bash
    git clone https://github.com/mohamedesmael10/ITI_System_Admin_Tool.git
-   cd ITI_System_Admin_Tool
    ```
 
    ```bash
    cd ITI_System_Admin_Tool
+   ```
+   
+   ```bash
+   chmod +x menu.py
    ```
 
 2. Run the main script:
@@ -93,5 +96,14 @@ ITI_System_Admin_Tool/
 ```
 
 ---
+## Some shots from the project
+
+![Screenshot 1](https://github.com/mohamedesmael10/ITI_System_Admin_Tool/raw/main/Shots/1.png)
+![Screenshot 2](https://github.com/mohamedesmael10/ITI_System_Admin_Tool/raw/main/Shots/2.png)
+![Screenshot 3](https://github.com/mohamedesmael10/ITI_System_Admin_Tool/raw/main/Shots/3.png)
+![Screenshot 4](https://github.com/mohamedesmael10/ITI_System_Admin_Tool/raw/main/Shots/4.png)
+![Screenshot 5](https://github.com/mohamedesmael10/ITI_System_Admin_Tool/raw/main/Shots/5.png)
+![Screenshot 6](https://github.com/mohamedesmael10/ITI_System_Admin_Tool/raw/main/Shots/6.png)
+
 
 **Mohamed Esmael**
