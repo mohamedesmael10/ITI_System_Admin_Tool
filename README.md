@@ -46,7 +46,7 @@ Ensure the following are installed in your environment:
 
    For Windows:
    
-   Ensure you have the latest version of Python from python.org.
+   Ensure you have the latest version of Python from [python.org](https://www.python.org).
 
 ---
 
@@ -55,6 +55,10 @@ Ensure the following are installed in your environment:
 1. Clone the repository:
    ```bash
    git clone https://github.com/mohamedesmael10/ITI_System_Admin_Tool.git
+   cd ITI_System_Admin_Tool
+   ```
+
+   ```bash
    cd ITI_System_Admin_Tool
    ```
 
