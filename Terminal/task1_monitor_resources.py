@@ -19,9 +19,9 @@ def monitor_resources():
         print(f"\n{Fore.CYAN}=== Monitor System Resources ===")
         print(f"{Fore.GREEN}Hostname: {Fore.YELLOW}{hostname}")
         print(f"{Fore.GREEN}IP Address: {Fore.YELLOW}{ip_address}")
-        print(f"{Fore.GREEN}Total Disk Space: {Fore.YELLOW}{total // (1024 * 1024)} MB")
-        print(f"{Fore.GREEN}Used Disk Space: {Fore.YELLOW}{used // (1024 * 1024)} MB")
-        print(f"{Fore.GREEN}Free Disk Space: {Fore.YELLOW}{free // (1024 * 1024)} MB")
+        print(f"{Fore.GREEN}Total Disk Space: {Fore.YELLOW}{total / (1024 ** 3):.2f} GB")
+        print(f"{Fore.GREEN}Used Disk Space: {Fore.YELLOW}{used / (1024 ** 3):.2f} GB")
+        print(f"{Fore.GREEN}Free Disk Space: {Fore.YELLOW}{free / (1024 ** 3):.2f} GB")
 
     except Exception as e:
         print(f"{Fore.RED}Error: Unable to monitor system resources. Details: {e}")
