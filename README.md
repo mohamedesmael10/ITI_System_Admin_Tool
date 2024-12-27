@@ -26,6 +26,7 @@ Ensure the following are installed in your environment:
    ```
 
 2. Install `tkinter`:
+   
    For Debian/Ubuntu:
    ```bash
    sudo apt-get install python3-tk
@@ -37,12 +38,14 @@ Ensure the following are installed in your environment:
    
 
    For macOS:
+   
    tkinter is included by default with Python installation. If not:
    ```bash
    brew install python-tk
    ```
 
    For Windows:
+   
    Ensure you have the latest version of Python from python.org.
 
 ---
