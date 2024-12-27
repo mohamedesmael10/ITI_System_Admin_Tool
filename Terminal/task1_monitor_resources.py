@@ -10,7 +10,7 @@ import shutil
 import os
 
 def monitor_resources():
-    """Fetch and display essential system resource information."""
+    """Fetch and display essential system resource information"""
     try:
         hostname = socket.gethostname()
         ip_address = socket.gethostbyname(hostname)
@@ -24,4 +24,4 @@ def monitor_resources():
         print(f"{Fore.GREEN}Free Disk Space: {Fore.YELLOW}{free / (1024 ** 3):.2f} GB")
 
     except Exception as e:
-        print(f"{Fore.RED}Error: Unable to monitor system resources. Details: {e}")
+        print(f"{Fore.RED}Error: Unable to monitor system resources, Details: {e} (-_-;)")

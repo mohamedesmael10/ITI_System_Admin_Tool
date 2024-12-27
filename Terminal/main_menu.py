@@ -12,7 +12,7 @@ import task2_list_directory
 import task3_exit_tool
 
 def main_menu():
-    """Display the main menu and handle user actions."""
+    """Display the main menu and handle user actions"""
     while True:
         print(f"\n{Fore.CYAN}==============================")
         print(f"{Fore.YELLOW}   System Administration Tool")
@@ -32,20 +32,20 @@ def main_menu():
             elif choice == 3:
                 task3_exit_tool.exit_tool()
             else:
-                print(f"{Fore.RED}Invalid choice. Please enter a number between 1 and 3.")
+                print(f"{Fore.RED}Invalid choice, Please enter a number between 1 and 3  (-_-;)・・・")
         except ValueError:
-            print(f"{Fore.RED}Error: Invalid input. Please enter a number.")
+            print(f"{Fore.RED}Error: Invalid input, Please enter a number  (-_-;)・・・")
         except Exception as e:
-            print(f"{Fore.RED}Unexpected Error: {e}")
+            print(f"{Fore.RED}Unexpected Error: {e}  (-_-;)・・・")
 
 if __name__ == "__main__":
     try:
         main_menu()
     except KeyboardInterrupt:
-        print(f"\n{Fore.MAGENTA}Tool interrupted by the user. Exiting...")
+        print(f"\n{Fore.MAGENTA}Tool interrupted by the user, Exiting (・_・;)...")
         task3_exit_tool.exit_tool()
     except SystemExit:
         pass
     except Exception as e:
-        print(f"{Fore.RED}Critical Error: {e}")
+        print(f"{Fore.RED}Critical Error: {e}  (-_-;)・・・")
         task3_exit_tool.exit_tool()

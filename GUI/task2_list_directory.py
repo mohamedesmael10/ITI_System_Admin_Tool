@@ -2,7 +2,7 @@ import os
 
 def list_directory(directory, gui=False):
     if not os.path.exists(directory):
-        message = f"Error: The directory '{directory}' does not exist."
+        message = f"Error: The directory '{directory}' does not exist (-_-;)・・・"
         if gui:
             return message
         else:

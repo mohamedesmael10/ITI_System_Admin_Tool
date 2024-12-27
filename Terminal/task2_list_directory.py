@@ -8,7 +8,7 @@ except ImportError:
 import os
 
 def list_directory(directory):
-    """List all files and subdirectories within the directory."""
+    """List all files and subdirectories within the directory"""
     try:
         if os.path.exists(directory):
             contents = os.listdir(directory)
@@ -21,6 +21,6 @@ def list_directory(directory):
             else:
                 print(f"{Fore.YELLOW}The directory is empty.")
         else:
-            print(f"{Fore.RED}Error: Directory '{directory}' does not exist.")
+            print(f"{Fore.RED}Error: Directory '{directory}' does not exist (-_-;)")
     except Exception as e:
-        print(f"{Fore.RED}Error: Unable to list directory contents. Details: {e}")
+        print(f"{Fore.RED}Error: Unable to list directory contents Details: {e} (-_-;)")

@@ -11,7 +11,7 @@ class SystemAdminToolGUI:
         self.root.geometry("600x400")
         self.root.resizable(False, False)
 
-        # Title Label
+       
         title_label = tk.Label(
             root,
             text="System Administration Tool",
@@ -20,7 +20,7 @@ class SystemAdminToolGUI:
         )
         title_label.pack()
 
-        # Task Buttons
+       
         task1_button = tk.Button(
             root, 
             text="Monitor System Resources", 
@@ -45,7 +45,7 @@ class SystemAdminToolGUI:
         )
         exit_button.pack(pady=10)
 
-        # Output Area
+        
         self.output_text = tk.Text(
             root, 
             wrap=tk.WORD, 
@@ -61,7 +61,7 @@ class SystemAdminToolGUI:
             output = task1_monitor_resources.monitor_resources(gui=True)
             self.display_output(output)
         except Exception as e:
-            messagebox.showerror("Error", f"Failed to monitor resources.\n\n{e}")
+            messagebox.showerror("Error", f"Failed to monitor resources (・_・;)\n\n{e}")
 
     def list_directory(self):
         """Execute Task 2: List directory contents and display the output"""
@@ -72,11 +72,11 @@ class SystemAdminToolGUI:
             output = task2_list_directory.list_directory(directory, gui=True)
             self.display_output(output)
         except Exception as e:
-            messagebox.showerror("Error", f"Failed to list directory contents.\n\n{e}")
+            messagebox.showerror("Error", f"Failed to list directory contents (・_・;)\n\n{e}")
 
     def exit_tool(self):
         """Exit the tool gracefully."""
-        if messagebox.askyesno("Exit", "Are you sure you want to exit?"):
+        if messagebox.askyesno("Exit", "Are you sure you want to exit? ヽ(･_･ ) (･_･)/ "):
             task3_exit_tool.exit_tool()
 
     def display_output(self, message):
@@ -86,7 +86,7 @@ class SystemAdminToolGUI:
         self.output_text.insert(tk.END, message)
         self.output_text.configure(state=tk.DISABLED)
 
-# Main entry point
+
 if __name__ == "__main__":
     root = tk.Tk()
     app = SystemAdminToolGUI(root)
